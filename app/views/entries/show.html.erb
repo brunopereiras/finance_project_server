@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Entry category:</strong>
+  <%= @entry.entry_category %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @entry.name %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @entry.value %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @entry.date %>
+</p>
+
+<p>
+  <strong>Should repeat:</strong>
+  <%= @entry.should_repeat %>
+</p>
+
+<p>
+  <strong>Repeat for:</strong>
+  <%= @entry.repeat_for %>
+</p>
+
+<p>
+  <strong>Entry:</strong>
+  <%= @entry.entry %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

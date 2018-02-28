@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  entry_category: one
+  name: MyString
+  value: 9.99
+  date: 2018-02-28
+  should_repeat: false
+  repeat_for: 1
+  entry: one
+
+two:
+  entry_category: two
+  name: MyString
+  value: 9.99
+  date: 2018-02-28
+  should_repeat: false
+  repeat_for: 1
+  entry: two

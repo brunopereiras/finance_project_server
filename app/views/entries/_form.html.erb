@@ -1,0 +1,52 @@
+<%= form_with(model: entry, local: true) do |form| %>
+  <% if entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+
+      <ul>
+      <% entry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :entry_category_id %>
+    <%= form.text_field :entry_category_id, id: :entry_entry_category_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :entry_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :value %>
+    <%= form.text_field :value, id: :entry_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date, id: :entry_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :should_repeat %>
+    <%= form.check_box :should_repeat, id: :entry_should_repeat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :repeat_for %>
+    <%= form.number_field :repeat_for, id: :entry_repeat_for %>
+  </div>
+
+  <div class="field">
+    <%= form.label :entry_id %>
+    <%= form.text_field :entry_id, id: :entry_entry_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
